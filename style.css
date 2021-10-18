@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: #ebf2ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.442);
+}
+
+.navbar_brand,
+.navbar_logo {
+  width: 150px;
+}
+
+.button_primary {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.button_primary:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.442);
+  background-image: linear-gradient(
+    to left,
+    #ffb62f 0%,
+    #dd4924 51%,
+    #ff932ff3 100%
+  );
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.hero_container {
+  margin-top: 1rem;
+}
+
+.hero_image_container {
+  position: relative;
+  width: 100%;
+}
+
+.hero_image_shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hero_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 15px 15px 40px -12px black;
+}
+
+.hero_text {
+  font-weight: 800;
+  font-size: 30px;
+  color: #1d3557;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.hero_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.explore_menu_container {
+  margin-bottom: 60px;
+}
+
+.explore_menu_text {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+}
+
+.food_card {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px,
+    rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.food_image {
+  display: block;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.food_card_description {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 15px 15px;
+  color: #1d3557;
+}
+
+.explore_button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1d3557;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  background: none;
+  border: 2px solid #1d3557;
+  transition: all 0.4s ease-in-out;
+  padding: 10px;
+}
+
+.explore_button:hover {
+  border: 2px solid #1d3557;
+  letter-spacing: 10px;
+}
+
+.restaurant_container {
+  margin-bottom: 60px;
+}
+
+.restaurant_text {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800px;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.restaurant_image1,
+.restaurant_image2,
+.restaurant_image3,
+.restaurant_image4 {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 15px,
+    rgba(0, 0, 0, 0.3) 0px 7px 10px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.email_container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.email_text {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800px;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.email_field_container {
+  text-align: center;
+}
+
+#email_field {
+  border: 1px solid #1d3557;
+  font-weight: 800;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+#email_field::placeholder {
+  color: #1d3557;
+  opacity: 0.7;
+}
+
+.email_button {
+  width: 130px;
+  height: 40px;
+  color: #ebf2ff;
+  font-weight: 500;
+  font-family: "Merriweather", serif;
+  background: #1d3557;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.email_button:hover {
+  border: none;
+  color: #ebf2ff;
+  background: #307cd8;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 15px,
+    rgba(0, 0, 0, 0.3) 0px 7px 10px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.quote_container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.quote_image {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  border-radius: 30px 30px 0 0;
+}
+
+.footer_info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer_image {
+  filter: grayscale(1);
+  cursor: pointer;
+
+}
+
+.footer_list_container {
+  list-style-type: none;
+}
+
+.footer_text {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.footer_text:hover {
+  color: #f9b208;
+}
+
+.footer_copyright_text {
+  padding: 15px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: 0.5em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.footer_copyright_link {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .navbar_brand,
+  .navbar_logo {
+    width: 180px;
+  }
+
+  .hero_container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .hero_text {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .hero_button {
+    display: inline;
+  }
+
+  .explore_menu_container {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  .explore_menu_gradient_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    z-index: -3;
+    transform: skewY(-4deg);
+  }
+
+  .explore_menu_text {
+    padding-top: 20px;
+  }
+
+  .explore_menu_lists {
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+    padding: 0 15px;
+    justify-content: center;
+  }
+
+  .food_image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .food_card_description {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .food_title {
+    text-align: center;
+  }
+
+  .food_card_description p {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10px;
+  }
+
+  .explore_button {
+    color: #ecd7d7;
+    border: 2px solid #ebf2ff;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .explore_button:hover {
+    color: #ecd7d7;
+  }
+
+  .restaurant_container {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .restaurant_text {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .restaurant_list_row1 {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .restaurant_list_row2 {
+    display: flex;
+  }
+
+  .restaurant_image1,
+  .restaurant_image2,
+  .restaurant_image3,
+  .restaurant_image4 {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+  }
+
+  .footer_info_container {
+    position: relative;
+  }
+}
+
+.email_container {
+  width: 100%;
+}
+
+.email_text {
+  font-size: 35px;
+}
+
+.footer_image {
+  width: 150px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .navbar {
+    height: 90px;
+  }
+
+  .hero_container {
+    margin-top: 20px;
+  }
+
+  .hero_text {
+    font-size: 40px;
+  }
+
+  .hero_description {
+    width: 100%;
+  }
+
+  .explore_menu_lists {
+    gap: 25px;
+  }
+
+  .food_card {
+    height: 100%;
+  }
+
+  .restaurant_text {
+    font-size: 60px;
+  }
+}
